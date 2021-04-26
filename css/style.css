@@ -470,6 +470,23 @@
 }
 
 /*-- -------------------------- -->
+<---        Home Advisor        -->
+<--- -------------------------- -*/
+#home-advisor {
+    text-align: center;
+}
+#home-advisor a {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px !important;
+}
+
+#home-advisor a img {
+    display: block;
+    margin: auto;
+}
+
+/*-- -------------------------- -->
 <---          SERVICES          -->
 <--- -------------------------- -*/
 
@@ -784,7 +801,9 @@
 }
 
 .team-bubbles {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     position: absolute;
     top: -300px;
     width: 800px;
@@ -1093,8 +1112,7 @@
     top: 0;
     left: 0;
     background: rgb(43,56,143);
-    background: -moz-linear-gradient(305deg, rgba(43,56,143,0.927608543417367) 9%, rgba(38,169,224,1) 100%);
-    background: -webkit-linear-gradient(305deg, rgba(43,56,143,0.927608543417367) 9%, rgba(38,169,224,1) 100%);
+    background: -o-linear-gradient(145deg, rgba(43,56,143,0.927608543417367) 9%, rgba(38,169,224,1) 100%);
     background: linear-gradient(305deg, rgba(43,56,143,0.927608543417367) 9%, rgba(38,169,224,1) 100%);
     z-index: -1;
 }
@@ -1734,7 +1752,8 @@ form p img {
     padding: 30px 20px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 33px rgba(0,9,37,.18);
+    -webkit-box-shadow: 0 4px 33px rgba(0,9,37,.18);
+            box-shadow: 0 4px 33px rgba(0,9,37,.18);
     margin-bottom: 80px;
     position: relative;
     display: -webkit-box;
@@ -1841,6 +1860,20 @@ form p img {
 
     .clippy {
         height: 40px;
+    }
+
+    #home-advisor .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 750px;
     }
 
     /*-- -------------------------- -->
@@ -2105,6 +2138,26 @@ form p img {
 
     .section {
         padding: 100px 0 !important;
+    }
+
+    #home-advisor .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 750px;
+        padding: 50px 0;
+    }
+
+    #home-advisor a:nth-of-type(2) img {
+        width: 200px;
     }
     
 }
