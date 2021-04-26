@@ -102,6 +102,10 @@
     .bubbles {
         display: none;
     }
+
+    .prices {
+        height: 1000px;
+    }
 }
 
 
